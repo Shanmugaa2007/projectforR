@@ -11,7 +11,7 @@
     position: relative;
 }
 
-.card,.cards,.image-class{
+.card,.cards,.image-class,.message-letter,.showenvelop,.memories-div,.suprice-div{
     background-color: white;
     padding: 3rem;
     border-radius: 20px;
@@ -32,7 +32,7 @@
 
 .heading{
     color: #fa1474;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
     font-weight: bold;
 }
@@ -76,13 +76,18 @@
     position: fixed;   
     z-index: 1000;
 }
+.hideour-memories{
+    display: none;
+}
 
 .our-memories{
-  margin: 10%;
+  margin: 0% 10% 10% 10%;
   margin-left: 15%;
   align-items: center;
+  display: block;
 }
 .image-class{
+  margin-top: 5%;
   padding: 2rem;
   padding-bottom: 1%;
 }
@@ -97,14 +102,191 @@
   height: 35vh;
 }
 .image-class:hover .memory-image{
-  width: 550px;
-  height: 40vh;
+  width: 505px;
+  height: 37vh;
   transition: 0.5s ease;
 }
 .para{
     font-size: 1.5rem;
     color: #881337;
 }
+.message-letter,.memories-div,.suprice-div{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    width: min-content;
+    padding: 5px 200px 5px  0px;
+    margin-bottom: 1%;
+}
+.message-letter .itag,.memories-div .linkitag,.suprice-div .sup-itag {
+    font-size: 200px;
+    color: #f30096;
+    margin-left: 6%;
+}
+.suprice-div .sup-itag {
+    font-size: 160px;
+    position: relative;
+    top: 50px;
+}
+.linkitag{
+    font-size: 180px;
+    margin-left: 0%;
+}
+.message-letter button,.memories-div button,.suprice-div button{
+    position: relative;
+    left: 100px;
+    min-width: max-content;
+    height: min-content;
+    background-color: #f30096;
+    color: #ffff;
+    outline: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.62),
+    0 2px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    animation:glow 1.5s infinite alternate;
+}
+.suprice-div button{
+    left: 70px;
+    bottom: 20px;
+}
+.hidesup-btn{
+    display: none;
+}
+@keyframes glow{
+  from{
+    box-shadow:0 0 10px #f30096,
+               0 0 20px #f30096;
+  }
+  to{
+    box-shadow:0 0 25px #f30096,
+               0 0 50px #f30096,
+               0 0 75px #f30096;
+  }
+}
+.message-letter button:hover,.memories-div button:hover{
+  background:#f500af;
+}
+.message-letter p,.memories-div p,.suprice-div p {
+    min-width: 100%;
+    position: relative;
+    top: 60px;
+    right: 110px;
+    color: #001eb1;
+}
+.suprice-div p{
+    top: 0px;
+    left: 200px;
+}
+.hideenvelop{
+    display: none;
+}
+.showenvelop{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+    max-height: 120vh;
+    margin-bottom: 2%;
+}
+.showenvelop p{
+    position: relative;
+}
+.p2{
+   bottom: 30px;
+}
+.p3{
+    bottom: 40px;
+}
+.p4{
+    bottom: 70px;
+}
+.p5{
+    bottom: 100px;
+}
+.p6{
+    bottom: 130px;
+}
+.p7{
+    bottom: 130px;
+}
+.p8{
+    bottom: 160px;
+}
+.p9{
+    bottom: 190px;
+}
+.p10{
+    bottom: 220px;
+}
+.p11{
+    bottom: 210px;
+}
+.p12{
+    bottom: 240px;
+}
+.p13{
+    bottom: 270px;
+}
+.p14{
+    bottom: 300px;
+}
+.p15{
+    bottom: 300px;
+}
+.p16{
+    left: 2px;
+    bottom: 330px;
+}
+.p17{
+    left: 1px;
+    bottom: 350px;
+}
+.showenvelop button{
+    position: relative;
+    bottom: 330px;
+    min-width: max-content;
+    height: min-content;
+    background-color: #f30096;
+    color: #ffff;
+    outline: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.62),
+    0 2px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.hidesup-content{
+    display: none;
+}
+.suprice-div{
+    display: block;
+    min-width: 400px;
+}
+.suprice-content{
+    margin-top: 10%;
+    margin-right: 25%;
+    display: block;
+}
+.suprice-content h1{
+    color: #f500af;
+    font-family: serif;
+}
+.suprice-buttons{
+    display: flex;
+    gap: 10px;
+    transform: translateY(80px);
+}
+.suprice-div{
+    min-height: 50vh;
+}
+
 
 @media (min-width: 320px) and (max-width: 500px) {
 
@@ -119,7 +301,7 @@
     margin-bottom: 10px;
 }
 .heading{
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     margin-bottom: 1.0rem;
 }
 .yesButton{
@@ -157,4 +339,138 @@ max-height: max-content;
   height: 35vh;
   transition: 0.5s ease;
 }
+  .our-memories{
+    margin: 5%;
+    margin-left: 5%;
+  }
+
+  .image-class{
+    padding: 1rem;
+  }
+
+  .image-class img{
+    width: 100%;
+    height: auto;
+  }
+
+  .image-class:hover .memory-image{
+    width: 100%;
+    height: auto;
+  }
+
+  .para{
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .message-letter,
+  .memories-div,
+  .suprice-div{
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .message-letter .itag,
+  .memories-div .linkitag,
+  .suprice-div .sup-itag{
+    font-size: 50px;
+    margin-left: 0;
+  }
+
+  .suprice-div .sup-itag{
+    top: 0;
+    left: 50px;
+  }
+
+  .message-letter button,
+  .memories-div button,
+  .suprice-div button{
+    position: static;
+    margin-top: 35px;
+    left: 0;
+    width: 70%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .suprice-div button{
+    bottom: 0;
+    transform: translate(-20px,45px);
+    width: max-content;
+  }
+
+  .message-letter p,
+  .memories-div p,
+  .suprice-div p{
+    position: static;
+    margin-top: 10px;
+    color: #001eb1;
+  }
+  .suprice-div p{
+    transform: translate(0px,45px);
+  }
+
+  .showenvelop{
+    margin-top: 20px;
+    padding: 10px;
+    min-height: max-content;
+  }
+
+  .showenvelop p{
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  .showenvelop button{
+    position: static;
+    margin-top: 15px;
+    width: 80%;
+  }
+
+  .p2,.p3,.p4,.p5,.p6,.p7,.p8,.p9,
+  .p10,.p11,.p12,.p13,.p14,.p15,
+  .p16,.p17{
+    bottom: 0;
+    left: 0;
+  }
+
+  .suprice-div{
+    min-height: auto;
+    padding: 40px 10px;
+  }
+  .suprice-content{
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  .suprice-content h1{
+    font-size: 22px;
+  }
+  .suprice-content p{
+    font-size: 9px;
+    width: 70%;          
+    max-width: 70%;
+    padding: 0 10px;      
+    text-align: center;
+    transform: none; 
+    transform: translateX(-5px);     
+    word-wrap: break-word;
+  }
+
+  .suprice-buttons{
+    flex-direction: column;   
+    align-items: center;
+    gap: 15px;
+    transform: translateY(-50px);        
+    margin-top: 10px;
+  }
+
+  .suprice-buttons button{
+    font-size: 12px;
+    width: 50%;
+  }
+
 }
