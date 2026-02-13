@@ -112,7 +112,7 @@
     margin-top: 10%;
     padding: 2rem;
     min-width: 70%;
-    height: 75vh;
+    max-height: max-content;
 }
 .image{
     width: 180px;
@@ -139,7 +139,7 @@
     transform: translateX(-5px);
   padding-bottom: 1%;
   max-width: 75%;
-  height: max-content;
+max-height: max-content;
 }
 .image-class:hover{
   max-width: 76%;
