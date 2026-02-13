@@ -457,7 +457,7 @@ max-height: max-content;
     padding: 0 10px;      
     text-align: center;
     transform: none; 
-    transform: translateX(-5px);     
+    transform: translateX(5px);     
     word-wrap: break-word;
   }
 
