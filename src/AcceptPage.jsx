@@ -31,7 +31,7 @@ const AcceptedPage = () => {
           className="image"
         />
 
-        <p style={{ fontSize: "1.5rem", color: "#881337" }}>
+        <p className="para">
           See you on the 14th! <br />
           (I knew you'd say yes 😉)
         </p>

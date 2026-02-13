@@ -65,7 +65,7 @@ const ValentineProposal = () => {
             style={{ transform: `scale(${1 + hoverCount * 0.1})` }}
             onClick={handleYesClick}
           >
-            Yes 💖
+            Yes💖
           </button>
 
           <button
